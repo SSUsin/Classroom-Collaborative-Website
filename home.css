@@ -1,0 +1,1172 @@
+
+html, body {
+	margin:0;
+	background: #f9fafc;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	text-align: center;
+	}
+
+h1 {
+    font-weight: 700;
+    padding-left: 60px;
+    font-size: 36px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+	color:#00507F;
+}
+
+h2 {
+    font-weight: 600; 
+    font-size: 25px;
+    text-align: left;
+	padding-left: 100px;
+	color:#00507F;
+}
+
+.titleHeading {
+	padding-left: 120px;
+}
+
+.titleHeading i {
+    font-size: 30px;
+}
+
+/*SOURCE https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_icon_bar_h*/
+.iconNavBar {
+  overflow: hidden;
+  background-color: #325379;
+  background: linear-gradient(to left, #18467a, #74A8DB, #18467a);
+  padding-top: 8px;
+  padding-right: 8px;
+
+  
+}
+
+.iconNavBar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 15px;
+  position: relative;
+}
+
+.Avatar{
+	width:35px; 
+	border-radius: 50%;
+	height: 35px;
+}
+
+
+.active {
+  background-color: rgb(95, 162, 235);
+  color: white;
+}
+
+
+.iconNavBar .icon {
+  display: none;
+}
+
+/*END SOURCE*/
+
+span.fa-circle {
+  position: absolute;
+  font-size: 0.8em;
+  top: 20px;
+  color: red;
+  right: 425px;
+}
+
+span.numOfNoti {
+  position: absolute;
+  font-size: 10px;
+  top: 20px;
+  color: #fff;
+  right: 428px;
+}
+
+/*SOURCE https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_navbar_dropdown*/
+.Notidropdown {
+    overflow: hidden;
+	float:right;
+}
+.Notidropdown .dropnotibtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 30px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.Notidropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.Notidropdown-content a {
+    float: none;
+    color: #00507F;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.iconNavBar a:hover, .Notidropdown:hover .dropnotibtn {
+	background-color: #4976a7;
+	color: white;
+}
+
+.Notidropdown-content a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.Notidropdown:hover .Notidropdown-content {
+	display: block;
+}
+
+/*END SOURCE*/
+
+/*Responsive part for top navbar */
+/*SOURCE  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_icon_bar_h*/
+@media screen and (max-width: 600px) {
+	.iconNavBar a:not(:first-child), .Notidropdown .dropnotibtn {
+		display: none;
+	}
+	.iconNavBar a.icon {
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.iconNavBar.responsive {
+		position: relative;
+	}
+	
+	.iconNavBar.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+  .iconNavBar.responsive a {
+	float: none;
+	display: block;
+	text-align: left;
+	}	
+	.iconNavBar.responsive .Notidropdown {
+		float: none;
+	}
+	
+	.iconNavBar.responsive .Notidropdown-content {
+		position: relative;
+	}
+	.iconNavBar.responsive .Notidropdown .dropnotibtn {
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
+}
+/*END SOURCE*/
+
+/*Containers*/
+.sectionOne, .sectionTwo  {
+    background-color: white;
+    width:  700px;
+    height: 300px;
+    padding-left: 60px;
+    box-shadow: 0px 0px 20px 0px rgb(243, 243, 243); /*F3F3F3*/
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 80px;
+    margin-right: -30px;
+	margin-bottom: 30px;
+
+}
+
+.sectionOne .alter, .sectionTwo .alter, .AssignSectionOne .alter, .AssignSectionTwo .alter{
+    color: #8DD8FE;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.sectionOne .alter:hover, .sectionTwo .alter:hover, .AssignSectionOne .alter:hover, .AssignSectionTwo .alter:hover  {
+    color: #4976a7;
+}
+
+.sectionOne a, .sectionTwo a {
+    text-align: left;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.sectionOne h2, .sectionTwo h2{
+	padding-left: 0.8px;
+    text-align: left;
+}
+
+.sectionOne h3, h4, p, a, .sectionTwo h3, h4, p, a {
+    text-align: right;
+}
+
+/*Join the two sections together*/
+.containerSectionOne, .containersectionTwo {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+
+}
+
+.containerOne {
+    padding-top: 10px;
+}
+
+.leftMargin {
+    float: left;
+	color:#6696B2;
+}
+
+/*Side Nav on the left*/
+/*SOURCE: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidenav_fixed*/
+.sidenav {
+    height: 100%;
+    width: 120px;
+    position: fixed;
+    z-index: 1;
+    top: 10;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    padding-top: 30px;
+}
+
+.sidenav a {
+	padding: 16px 20px 16px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(28, 85, 138);
+    display: block;
+}
+
+.sidenav a:hover {
+    background-color: #f9fafc;
+}
+
+.main {
+    margin-left: 160px; 
+    font-size: 28px; 
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/*SideNav END SOURCE*/
+
+/*SOURCE: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate1 */
+.Button {
+  border-radius: 4px;
+  background-color: #4976a7;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: -10px;
+}
+
+.Button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.Button:hover{
+  padding-right: 25px;
+  background-color: #5c94d1;
+}
+
+.Button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+
+.Button:hover span {
+  padding-right: 25px;
+}
+
+.Button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*Animated Button END SOURCE*/
+
+/*------------------------Assignment Page.html --------------------*/
+/*Question Container*/
+
+.wholeSection {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 100%;
+}
+
+.LeftSection{
+	flex: 70%;
+}
+
+.RightSection{
+	flex: 30%;
+}
+
+.AssignSectionOne {
+	background-color: white;
+	padding-top: 10px;
+    display: block;
+    box-shadow: 0px 0px 20px 0px rgb(236, 236, 236);
+    border-radius: 10px;
+	margin-left: 220px;
+}
+.QuestionContainer{
+    text-align: center;
+    padding-top: 5px;
+}
+
+.QuestionContainer .AssignSectionOne{
+    width:  1000px;
+    height: 150px;
+}
+
+
+.QuestionContainer .AssignSectionOne .Container1{
+	padding-left: 10px;
+    line-height: 30px;
+    width: 80%;
+}
+
+.QuestionContainer .AssignSectionOne .Container1 h2{
+	padding-left: 50px;
+    width: 100%;
+	color: #00507F;
+}
+
+.QuestionContainer .AssignSectionOne .Container1 h3{
+	padding-left: 50px;
+    width: 100%;
+	text-align: center;
+	color: #6696B2;
+	font-size:18px;
+}
+
+.AnswerContainer .AssignSectionOne .Container1 input{
+    margin-left: 40px;
+    width: 582px;
+    height: 142px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+
+}
+
+.AnswerContainer .AssignSectionOne .Container1 button{
+    margin-left: 40px;
+    margin-top: -15;
+}
+
+.AnswerContainer {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.AnswerContainer .AssignSectionOne {
+    width:  1000px;
+    height: 300px;
+}
+
+.AnswerContainer .AssignSectionOne .Container1{
+	padding-left: 10px;
+    line-height: 30px;
+    width: 80%;
+}
+
+.AnswerContainer .AssignSectionOne .Container1 h2{
+	padding-left: 50px;
+    width: 100%;
+	color: #00507F;
+}
+
+.AnswerContainer .AssignSectionOne .Container1 p{
+    width: 100%;
+	color: #6696B2;
+	margin-left: 60px;
+}
+
+.FeedBackContainer {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.FeedBackContainer .AssignSectionOne {
+    width:  1000px;
+    height: 180px;
+}
+
+.FeedBackContainer .AssignSectionOne .Container1 .commentSection img {
+	margin-left:60px;
+	width:30px;
+	border:5px solid #9CD47C;
+	border-radius: 50%;
+}
+
+.FeedBackContainer .AssignSectionOne .Container1 .commentSection p{
+    width: 600px;
+    margin-left: -100;
+    height: 60px;
+    padding-top: 0px;
+}
+
+.FeedBackContainer .AssignSectionOne .Container1 .feedbackComment p{
+    text-align:left;
+	margin-left:60px;
+	padding: 0px;
+}
+
+.FeedBackContainer .AssignSectionOne .Container1 .postFeedback img {
+	margin-left:60px;
+	width:30px;
+	border:5px solid #9CD47C;
+	border-radius: 50%;
+}
+
+.FeedBackContainer .AssignSectionOne .Container1 .postFeedback input{
+    width: 512px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    height: 42px;
+    padding-top: 30px;
+    padding-bottom: 30px;	
+    padding-left: 0px;
+    border-left-width: 10px;
+
+}
+
+.RightSection .AssignSectionTwo {
+    background-color: white;
+    width:  400px;
+    height: 310px;
+	box-shadow: 0px 0px 20px 0px rgb(236, 236, 236);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-left: 60px;
+    margin-right: 100px;
+    display: block;
+	padding-top: 20px;
+}
+
+.RightSection .AssignSectionTwo .Container1 img {
+	border:5px solid #9CD47C;
+	border-radius: 50%;
+}
+
+.FeedBackContainer .AssignSectionOne .Container1 h2{
+	padding-left: 50px;
+    width: 100%;
+	color: #00507F;
+}
+
+
+/*Dicussion button*/
+/*SOURCE https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate1*/
+.discussionButton {
+  border-radius: 4px;
+  background-color: #4976a7;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.discussionButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.discussionButton:hover{
+  padding-right: 25px;
+  background-color: #5c94d1;
+}
+
+.discussionButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+
+.discussionButton:hover span {
+  padding-right: 25px;
+}
+
+.discussionButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*Animated button END SOURCE*/
+
+.LeftSection p{
+	padding-top: 8px;
+	text-align: center;
+	color: #00507F;
+}
+
+.LeftSection a{
+	padding-top: 8px;
+	text-align: center;
+	color: #00507F;
+}
+
+/*------------------Discussion Page---------------------*/
+
+.DiscussionContainer .AssignSectionOne .Container1 {
+    padding-bottom: 50px;
+	height: 630px;
+	overflow: auto;
+}
+
+.ContainerTwo {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 40px;
+	margin-right: 40px;
+	height: 300px;
+	overflow: auto;
+}
+
+.DisccussSectionTwo{
+	background-color: white;
+    width:  400px;
+    height: 710px;
+	box-shadow: 0px 0px 20px 0px rgb(236, 236, 236);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-left: 60px;
+    margin-right: 10px;
+    display: block;
+}
+
+.DiscussionContainer .AssignSectionOne .Container1 h2 {
+	padding:5px 0px 10px 30px;
+	color: #00507F;
+}
+
+.DiscussionContainer .AssignSectionOne .Container1 .ContainerTwo img{
+	border:5px solid #9CD47C;
+	border-radius: 50%;
+	float: left;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.DiscussionContainer .AssignSectionOne .Container1 .ContainerTwo h3{
+	width:300px;
+}
+
+.DiscussionContainer .AssignSectionOne .Container1 .ContainerTwo .subtitle h3{
+    width:300px;
+    text-align:left;
+    margin-left: 40px;
+}
+
+.ChatContainer .DisccussSectionTwo .Container1 h3 {
+	float: left;
+	padding-left: 30px;
+	margin-top: 30px;
+	color: #00507F;
+}
+
+.ChatContainer .DisccussSectionTwo .Container1 p {
+	float: left;
+	padding-left: 30px;
+	margin-top: 10px;
+	color: #818181;
+}
+
+/*Speech bubble contents*/
+/*SOURCE https://leaverou.github.io/bubbly/*/
+.speech-bubble {
+	position: relative;
+	background: #fff;
+	border-radius: .4em;
+	width: 700px;
+	height: 100px;
+	margin-left: 200px;
+	color: gray;
+	padding-top: 10px;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right-color: #fff;
+	border-left: 0;
+	margin-top: -20px;
+	margin-left: -20px;
+}
+
+
+.speech-bubble2 {
+	position: relative;
+	background: #fff;
+	border-radius: .4em;
+	width: 600px;
+	height: 60px;
+	padding-top: 10px;
+	margin-left: 300px;
+	margin-top: 20px;
+	color: gray;
+}
+
+.speech-bubble2:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 15px solid transparent;
+	border-right-color: #fff;
+	border-left: 0;
+	margin-top: -15px;
+	margin-left: -15px;
+}
+
+.speech-bubble3 {
+    position: relative;
+    background: #fff;
+    border-radius: .4em;
+    width: 600px;
+    height: 70px;
+    padding-top: 10px;
+    margin-left: 300px;
+    margin-top: 20px;
+    color: gray;
+}
+
+.speech-bubble3:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 15px solid transparent;
+	border-right-color: #fff;
+	border-left: 0;
+	margin-top: -15px;
+	margin-left: -15px;
+}
+
+/*END SOURCE*/
+
+.textBubble .speech-bubble2 {
+	margin-top: 20px;
+	background-color:white;
+}
+
+.textBubble .speech-bubble2:after {
+	border-right-color:white;
+}
+
+.bottom-right {
+    float: right;
+    color: #aaa;
+	margin-top: -17px;
+	padding-right: 10px;
+}
+
+.speech-bubble2 .bottom-right {
+    float: right;
+    color: #aaa;
+	margin-top: 20px;
+	padding-right: 10px;
+}
+
+.speech-bubble3 .bottom-right {
+    margin-top: 5px;
+}
+
+.bottom-left {
+    float: left;
+    color: #999;
+}
+
+.avatarIcon {
+    width:150px;
+}
+
+.speech-bubble .avatar1Text, .ChatContainer .DisccussSectionTwo .Container1 .avatarChat .avatar1 p {
+    color: #6B00D6;
+}
+
+.chatAvater {
+    width: 70px;
+}
+
+
+.avatar2 p, .avatar2Text, .ChatContainer .DisccussSectionTwo .Container1 .avatarChat .avatar2 p{
+    color: #EA7FEA;
+}
+
+.avatar4Text {
+    padding-bottom:5px;
+    color: #006BD6;
+}
+
+
+.avatarMiniIcon img{
+    width:40px; 
+    margin-left:50px; 
+    margin-top: 20px;
+}
+
+.functionPosition {
+    margin-top: 5px;
+}
+
+.textBubble img {
+    width:40px; 
+    margin-left:210px; 
+    margin-top: 5px;
+}
+
+.discussionIcons img {
+    width:70px;
+}
+
+/* Icons */
+
+.schoolLogo img {
+    width: 150px;
+}
+
+.myAccount a, .help a {
+    float:right;
+}
+
+.fa fa-thumbs-up, .fa fa-comment, .myFunction a {
+    font-size: 15px;
+}
+
+.titleIcon i{
+    font-size: 30px;
+}
+
+.fa fa-user-circle-o {
+    font-size: 25px;
+}
+
+.help i, .dashboardNaviBar i, .homeNaviBar i {
+    font-size: 40px;
+}
+
+.calendar i, .groups i {
+    font-size:35px;
+}
+
+/*Input comment/message/feedback */
+/*SOURCE https://www.w3schools.com/css/tryit.asp?filename=trycss_form_padding*/
+input[type=text], select {
+    width: 100%;
+    padding: 20px 30px;
+    margin: 8px 0;
+	height: 30px;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+	font-size: 15px;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+/*END SOURCE*/
+
+.ChatContainer .DisccussSectionTwo .Container1 img{
+	border:5px solid #9CD47C;
+	border-radius: 50%;
+	float: left;
+}
+
+.ChatContainer .DisccussSectionTwo .Container1 .onlineGroup img {
+	margin-left: 40px;
+	margin-bottom: 10px;
+	margin-top: -10px;
+	width: 70px;
+}
+
+.ChatContainer .DisccussSectionTwo .Container1 .ChatBox{
+	background-color:white;
+    margin-top: 480px;
+    margin-left: 15px;
+    margin-right: 0px;
+	width:370px;
+	height:130px;
+	box-shadow: 0px 0px 20px 0px rgb(236, 236, 236);
+}
+
+
+.ChatContainer .DisccussSectionTwo .Container1 .avatarChat .avatar3 p{
+    color: #00D6D6;
+    padding-left:130px;
+}
+
+.ChatContainer .DisccussSectionTwo .Container1 .avatarChat .avatar4 p{
+    color: #006BD6;
+}
+
+.ChatContainer .DisccussSectionTwo .Container1 .ChatBox input{
+    height: 86px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	border-top-width: 5px;
+	padding-bottom: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 5px;
+	cursor: pointer;
+}
+
+.ChatContainer .DisccussSectionTwo .Container1 .ChatBox i{
+    color: gray; 
+    font-size:20px; 
+    cursor: pointer;
+}
+
+.ChatContainer .DisccussSectionTwo .Container1 .ChatBox button{
+    width: 76px;
+    height: 26px;
+    margin-left: 240px;
+    margin-top: 5px;
+	border-radius: 4px;
+	background-color: #4976a7;
+	border: none;
+	color: #FFFFFF;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.RightSection .AssignSectionTwo .Container1 h3{
+	color:#00507F;
+}
+
+
+
+
+/*-----------------Responsive--------------*/
+/*Idea comes from https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_mediaquery_breakpoints*/
+@media(max-width: 1750px) {
+
+    .AssignSectionTwo {
+        width:  300px;
+    }
+	
+	
+	.AssignSectionOne {
+        width:  850px;
+    }
+
+    .QuestionContainer .AssignSectionOne {
+        width:  850px;
+        height: 160px;
+    }
+
+
+    .AnswerContainer .AssignSectionOne {
+        width:  850px;
+        height: 300px;
+
+    }
+	
+	.FeedBackContainer .AssignSectionOne {
+        width:  850px;
+        height: 150px;
+
+    }
+}
+
+@media(max-width: 1660px) {
+	
+	.sectionOne {
+		width: 600px;
+	}
+
+    .AssignSectionTwo {
+        width:  300px;
+    }
+	
+	.LeftSection{
+		flex: 60%;
+	}
+	
+	.RightSection .AssignSectionTwo{
+		height: 300px;
+		padding-top: 10px;
+		padding-bottom: 20px;
+		padding-right: 5px;
+	}
+	
+	.RightSection .AssignSectionTwo h3{
+		padding-bottom: -5px;
+	}
+	
+	
+	.AssignSectionOne {
+        width:  830px;
+    }
+
+    .QuestionContainer .AssignSectionOne {
+        width:  830px;
+        height: 160px;
+    }
+
+
+    .AnswerContainer .AssignSectionOne {
+        width:  830px;
+        height: 300px;
+
+    }
+	
+	.FeedBackContainer .AssignSectionOne {
+        width:  830px;
+        height: 150px;
+
+    }
+	
+    
+}
+
+@media(max-width: 1560px) {
+	
+	.sectionOne {
+		width: 500px;
+	}
+
+    .AssignSectionTwo {
+        width:  200px;
+    }
+	
+	.LeftSection{
+		flex: 60%;
+	}
+	
+	.RightSection .AssignSectionTwo{
+		height: 300px;
+		padding-top: 10px;
+		padding-bottom: 20px;
+	}
+	
+	.RightSection .AssignSectionTwo h3{
+		padding-bottom: -5px;
+	}
+	
+	.AssignSectionOne {
+        width:  700px;
+    }
+
+    .QuestionContainer .AssignSectionOne {
+        width:  700px;
+        height: 160px;
+    }
+
+
+    .AnswerContainer .AssignSectionOne {
+        width:  700px;
+        height: 300px;
+
+    }
+	
+	.AnswerContainer .AssignSectionOne .Container1 input{
+		margin-right: 110px;
+		width: 500px;
+		height: 150px;
+	}
+	
+	.FeedBackContainer .AssignSectionOne {
+        width:  700px;
+        height: 150px;
+
+    }
+	
+	.AssignSectionTwo .Container1 {
+		margin:50px;
+	}
+	
+    
+}
+
+@media(max-width: 1450px) {
+
+	.sectionOne {
+		width: 450px;
+	}
+	
+	.AssignSectionTwo {
+        width:  200px;
+    }
+	
+	.RightSection{
+		width: 300px;
+	}
+	
+	.RightSection .AssignSectionTwo{
+		height: 300px;
+		padding-top: 10px;
+		padding-bottom: 20px;
+	}
+	
+	.RightSection .AssignSectionTwo h3{
+		padding-bottom: -5px;
+	}
+	
+    .AssignSectionTwo {
+        width:  300px;
+    }
+	
+	
+	.AssignSectionOne {
+        width:  500px;
+    }
+
+    .QuestionContainer .AssignSectionOne {
+        width:  700px;
+        height: 160px;
+    }
+
+
+    .AnswerContainer .AssignSectionOne {
+        width:  700px;
+        height: 300px;
+
+    }
+	.FeedBackContainer .AssignSectionOne {
+        width:  700px;
+        height: 150px;
+
+    }
+    
+}
+
+@media(max-width: 1350px) {
+
+	.sectionOne {
+		width: 450px;
+	}
+	
+	.RightSection{
+		width: 100px;
+	}
+	
+    .AssignSectionTwo {
+        width:  250px;
+    }
+	
+	
+	.AssignSectionOne {
+        width:  500px;
+    }
+
+    .QuestionContainer .AssignSectionOne {
+        width:  650px;
+        height: 160px;
+    }
+
+
+    .AnswerContainer .AssignSectionOne {
+        width:  650px;
+        height: 300px;
+
+    }
+	.FeedBackContainer .AssignSectionOne {
+        width:  650px;
+        height: 150px;
+
+    }
+    
+}
+
+@media(max-width: 1248px) {
+
+	.sectionOne {
+		width: 400px;
+	}
+	
+    .AssignSectionTwo {
+        width:  300px;
+    }
+
+    .QuestionContainer .AssignSectionOne {
+        width:  560px;
+        height: 160px;
+		padding-bottom: 10px;
+    }
+	
+	.QuestionContainer .AssignSectionOne .Container1 h3{
+	font-size:15px;
+	}
+
+    .AnswerContainer .AssignSectionOne {
+        width:  560px;
+        height: 300px;
+
+    }
+	.FeedBackContainer .AssignSectionOne {
+        width:  560px;
+        height: 150px;
+
+    }
+	
+	.AnswerContainer .AssignSectionOne .Container1 input{
+		width: 472px;
+	}
+}

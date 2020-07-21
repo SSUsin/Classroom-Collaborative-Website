@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+	<title>English Drama</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" type="text/css" href="home.css" />
+	<script src="home.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<header>
+	<!--Top NaviBar-->
+	<div class="iconNavBar" id="myTopNav">
+
+		<div class="schoolLogo">
+			<a href="#" style="float:left">
+				<img src="Pictures/CollegeLogo.png" alt="emblem">
+			</a>
+		</div>
+
+		<div class="myAccount">
+			<a href="#Account" title="My Account">
+				<img src="Pictures/person3.png" class="Avatar"> Alex
+			</a>
+		</div>
+
+		<div class="help">
+			<a href="#Help" title="Help">
+				<i class="material-icons">help_outline</i>
+			</a>
+		</div>
+
+		<div class="calendar">
+			<a href="#Calendar" title="Calendar">
+				<i class="fa fa-calendar"></i>
+			</a>
+		</div>
+
+		<div class="groups">
+			<a href="#Groups" title="Groups">
+				<i class="fa fa-group"></i>
+			</a>
+		</div>
+		
+		<div class="Notidropdown">
+			<button class="dropnotibtn">
+				<i class="fa fa-bell" style="font-size:30px;"></i>
+				<span class="fa fa-circle" style="right:445px;"></span>
+				<span class="numOfNoti" style="right:448px;">2</span>
+			</button>
+			<div class="Notidropdown-content">
+				<a href="#">Notifications</a>
+				<div class="commentNotification">
+					<a href="#">
+						<i class="fa fa-user-circle-o" ></i> 
+						Andrew has posted a comment on your page.
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<i class="fa fa-comment"></i> - 20 minutes ago
+						</br>
+					</a>
+					<a href="#">
+						<i class="fa fa-user-circle-o"></i> 
+						Angela liked your comment. 
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<i class="fa fa-thumbs-up"></i> - an hour ago</br>
+				</a>
+				</div>
+			</div>
+		</div> 
+
+		<div class="dashboardNaviBar">
+			<a href="#Dashboard" class="active" title="Dashboard">
+				<i class="fa fa-dashboard"></i>
+			</a>
+		</div>
+		
+		<div class="homeNaviBar">
+			<a href="#Home" title="Home">
+				<i class="fa fa-home"></i>
+			</a>
+		</div>
+		
+		<div class="myFunction">
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+		</div>
+	</div>
+	</header>
+	<!--Top NavBar end-->
+	
+	<!--Side bar-->
+	<div class="sidenav">
+		<a href="home.html"  class="active">Drama</a>
+		<a href="#Notices">Notices</a>
+		<a href="AssignmentPage.html">Assignments</a>
+		<a href="#Grades">Grades</a>
+		<a href="#Members">Members</a>
+		<a href="#Syllabus">Syllabus</a>
+		<a href="#Resources">Resources</a>
+	</div>
+	<!--Sidebar end-->
+	
+	<!--Page Titles-->
+	<div class="titleHeading">
+		<h1><i class="fa fa-book"></i> Courses</h1>
+		<h2>12WGH Drama</h2>
+	</div>
+	<!--Page Titles end-->
+	
+	<!--4 containers-->
+	<!--Notices + Resources-->
+	<div class="containerSectionTwo">
+		<div class="sectionOne">
+			<div class="containerOne">
+				<h2>Notices Board</h2>
+				<div class="leftMargin">
+					<a href="#DramaA7" class="alter">Assignment 7 is now available</a>
+					<p>- posted on 18th May 2018 at 16:00</p>
+					<a href="#DramaA6" class="alter">Assignment 6 has now been graded </a>
+					<p>- posted on 15th May 2018 at 12:00</p>
+					<a href="#more"><button class="Button"><span>View More</span></button></a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="sectionOne">
+			<div class="containerOne">
+				<h2>Resources</h2>
+				<div class="leftMargin">
+					<a href="#ClassNotes" class="alter">Class Notes</a>
+					<a href="#ReadingList" class="alter">Reading List</a>
+					<a href="#ExternalResources" class="alter">External Resources</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Notices + Resources End-->
+	
+	<!--Assignments Containers-->
+    <div class="containerSectionOne">
+		<div class="sectionOne">
+			<div class="containerOne">
+				<h2>Upcoming Assignments</h2>
+				<div class="leftMargin">
+					<a href="AssignmentPage.html" class="alter">Assignment 7: Halmet ACT III</a>
+					<p>- 100 points, 25th May 2018 at 16:00</p>
+					<a href="#DramaA8" class="alter">Assignment 8: Halmet ACTII </a>
+					<p>- 100 points, 01st June 2018 at 16:00</p>
+					<p>-Not available yet-</p>
+				</div>
+			</div>
+			</div>
+		
+
+		<div class="sectionOne">
+			<div class="containerOne">
+				<h2>Past Assignments</h2>
+					<div class="leftMargin">
+						<a href="#DramaA6" class="alter">Assignment 6: Halmet ACT II</a>
+						<p>- Submitted on 15th May 2018 at 17:00</p>
+						<a href="#DramaA5" class="alter">Assignment 5: Halmet ACT I</a>
+						<p>- Submitted on 08th May 2018 at 19:00</p>
+					</div>
+			</div>
+		</div>
+	</div>
+	
+
+</body>
+</html>
